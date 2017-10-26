@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <h1>Add Todo</h1>
+    <form method="POST">
+      <input type="text" required placeholder="title" name="title" />
+      <input type="text" required placeholder="content" name="content" />
+      <input type="submit" />
+    </form>
+    <h1>Todo List</h1>
+    <% for(let i = 0; i < todoList.length; i++) { %>
+      <p>
+        <%=todoList[i].title %>
+        <%=todoList[i].content %>
+      </p>
+    <% } %>
+  </body>
+</html>
